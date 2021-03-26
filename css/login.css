@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir.woff') format('woff'), url('../fonts/Vazir.woff') format('truetype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazir';
+}
+
+.background-image {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.byd-Middle-section {
+    width: 80%;
+    height: calc(100vh - 160px);
+    background-color: rgb(71, 255, 240);
+    box-shadow: 2px 2px 15px 5px #cecece;
+    margin: auto;
+}
+
+.Advertise {
+    width: 100%;
+    height: 100%;
+    background-color: violet;
+}
+
+@media only screen and (max-width:992px) {
+    .Advertise {
+        display: none;
+    }
+}
+
+.byd-part-form {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex; 
+    /* background-color: #5f637c; */
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    font-family: 'Vazir';
+    flex-direction: column;
+}
+.byd-box-form {
+    margin: auto;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.welcome  {
+
+    margin-bottom: 20px;
+    font-family: 'Vazir';
+
+}
+.welcome h4{
+    font-size: 20px;
+    font-family: Vazir;
+    font-weight: bold;
+    background: -webkit-linear-gradient( #3d55db, #b16af3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+#message-id {
+    /* background-color: rgb(64, 224, 216); */
+    color: rgb(170, 168, 168);
+    font-size: 12px;
+    /* display: none; */
+}
+#message-id i{
+    
+        background: -webkit-gradient(linear, left top, left bottom, from(#3d55db), to(#c17eff));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+}
+
+.byd-user,
+.byd-password {
+    /* background-color: rgb(76, 0, 255); */
+    width: 100%;
+    /* height: 55px; */
+    padding: 4px;
+    font-family: Vazir;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.byd-user {
+    margin-top: 25px;
+}
+.byd-password {
+    margin-top: 25px;
+}
+
+
+
+.byd-user-icon,
+.byd-password-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 23px;
+    /* border: 1px solid blue; */
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.byd-user-icon i,
+.byd-password-icon {
+    margin: auto 0;
+    font-size: 17px;
+    color: rgb(190, 190, 190);
+}
+
+.byd-input-user,
+.byd-input-pass {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(205, 50, 128); */
+    float: left;
+}
+
+.byd-input-user label,
+.byd-input-pass label {
+    font-size: 12px;
+    color: rgb(185, 183, 183);
+     margin-top: -10px;
+    width: 50%;
+}
+
+.byd-input-user input,
+.byd-input-pass input {
+    width: 100%;
+    height: 30px;
+    font-size: 13px;
+    /* background-color: yellowgreen; */
+    border: none;
+    border-bottom: 1px solid rgb(185, 183, 183);
+    outline: none;
+    /* margin-top: 12%;
+    margin-right: 4%; */
+}
+.byd-input-user input:focus,
+.byd-input-pass input:focus{
+    border-bottom: 1px solid #4964ff ;
+    border-image: linear-gradient(to right, #253bbd, #fc77f5) 1;
+}
+
+.p-floating-container {
+    position: relative;
+}
+
+.p-floating-container label {
+   left: 50%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 'all 200ms';
+    border: none;
+}
+
+.p-floating-container input:not(:placeholder-shown)+label {
+    background: #FFF;
+    transform: translate(0, -50%);
+    opacity: 1;
+}
+.byd-form-down{
+    width: 100%;
+    /* background-color: #4964ff; */
+    text-align: center;
+}
+
+
+.byd-fotget-pass {
+   color: rgb(185, 183, 183);
+    font-size: 13px;
+    margin: 18px auto;
+    
+}
+
+#log,
+#submit {
+    margin-top: 5px;
+    width: 38%;
+    height: 30px;
+    font-size: 13px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    
+}
+
+#log {
+    background-image: linear-gradient(120deg, #778bfc 0%, #4964ff 100%);
+    color: white;
+    margin-left: 5px;
+}
+
+#submit {
+    background-color: #f0eeee;
+    color: rgb(185, 183, 183);
+}
+
+
+/*******/
+
+.Advertise {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bacground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

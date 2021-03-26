@@ -1,0 +1,117 @@
+/* *,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+form {
+    width: 200px;
+    margin: 15px;
+    font-size: 16px;
+    direction: rtl;
+}
+
+.float-label .control {
+    float: right;
+    position: relative;
+    width: 100%;
+    padding-top: 23px;
+    padding-bottom: 10px;
+}
+
+.float-label select,
+.float-label input {
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid orange;
+    resize: none;
+    background: transparent;
+    color: rgb(223, 6, 6);
+}
+
+.float-label select+label,
+.float-label input+label {
+    position: absolute;
+    top: 10px;
+    transition: top 0.7s ease, opacity 0.7s ease;
+    opacity: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(5, 180, 84);
+}
+
+.float-label select:focus+label,
+.float-label input:valid+label {
+    opacity: 1;
+    top: 3px;
+}
+
+.float-label select:focus+label,
+.float-label input:focus+label {
+    color: rgb(172, 11, 73);
+}
+
+option {
+    color: rgb(16, 136, 206);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #000 inset !important;
+    -webkit-text-fill-color: #ccc !important;
+} */
+
+.coli {
+    text-align: right;
+    margin: 50px;
+    width: 250px;
+    height: 30px;
+    background-color: orange;
+}
+
+.icon {
+    width: 10%;
+    height: 100%;
+    background-color: orangered;
+    float: left
+}
+
+.input {
+    direction: rtl;
+    width: 90%;
+    height: 100%;
+    float: left;
+    background-color: orchid;
+}
+
+.input:focus {
+    border: none;
+}
+
+.p-floating-container {
+    position: relative;
+}
+
+.p-floating-container label {
+    /* Position the label */
+    left: 135px;
+    position: absolute;
+    top: 0;
+    /* Hide it by default */
+    opacity: 0;
+    transition: 'all 200ms';
+    border: none;
+}
+
+
+/* Show the label at desired position when the placeholder of input isn't shown */
+
+.p-floating-container input:not(:placeholder-shown)+label {
+    background: #FFF;
+    transform: translate(0, -50%);
+    opacity: 1;
+}
