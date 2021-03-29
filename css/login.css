@@ -80,9 +80,10 @@
 }
 #message-id {
     /* background-color: rgb(64, 224, 216); */
-    color: rgb(170, 168, 168);
+    /* color: rgb(170, 168, 168); */
+    color:#4964ff  ;
     font-size: 12px;
-    /* display: none; */
+    display: none;
 }
 #message-id i{
     
@@ -147,6 +148,7 @@
     color: rgb(185, 183, 183);
      margin-top: -10px;
     width: 50%;
+    font-family: 'Vazir';
 }
 
 .byd-input-user input,
@@ -164,7 +166,7 @@
 .byd-input-user input:focus,
 .byd-input-pass input:focus{
     border-bottom: 1px solid #4964ff ;
-    border-image: linear-gradient(to right, #253bbd, #fc77f5) 1;
+    /* border-image: linear-gradient(to right, #253bbd, #fc77f5) 1; */
 }
 
 .p-floating-container {
