@@ -5,107 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="fonts/sahman.css">
-   
-    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+    <title>login form</title>
+    <link rel="stylesheet" href="fonts/css/sahman.css">
+    {{--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> --}}
+    <link rel="stylesheet" href="dashboard/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dashboard/css/login.css">
+    <link rel="stylesheet" href="dashboard/css/site-demos.css">
 
-    <title>Document</title>
+
 </head>
-
 <body dir="rtl">
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 background-image">
+<div class="container-fluid ">
+    <div class="row ">
+        <div class="col-12 background-image byd-style-flex">
+            <div class=" row col-12 col-lg-10 byd-Middle-section">
+                    <div class=" col-12 col-lg-5  byd-part-form  byd-style-flex">
+                        <div class="byd-box-form">
+                            <div class="welcome">
+                                <h4>  خوش آمدید :)</h4>
+                            </div>
+                            <div id="message-id">
+                                <p id="message-error-id"> <i class="icon-bell"></i>اطلاعات وارد شده درست نمی‌باشد.</p>
 
-                <div class="container">
-                    <div class=" row byd-Middle-section">
-                        <div class=" col-12 col-lg-5  byd-part-form">
-                           
-                            <div class="byd-box-form">
-                                <div class="welcome">
-                                    <h4> &nbsp خوش آمدید :)</h4>
-                                </div>
-                                <div id="message-id">
-                                    <p id="message-error-id"> <i class="icon-bell"></i>اطلاعات وارد شده درست نمی باشد.</p>
-                                    
-                                </div>
-                                <form id="myform-id" action="#" method="POST">
-                                    <div class="byd-user">
-                                        <div class="byd-user-icon">
-                                            <i class="icon-user"></i>
+                            </div>
+                            <form id="myform-id" action="#" method="POST">
+                                <div class="byd-user  byd-style-flex">
+                                    <div class="byd-user-icon  byd-style-flex">
+                                        <i class="icon-user"></i>
+                                    </div>
+                                    <div class="byd-input-user">
+                                        <div class="p-floating-container">
+
+                                            <input id="user-id" name="Uname" type="text" placeholder="نام کاربری" />
+                                            <label>نام کاربری</label>
+
                                         </div>
-                                        <div class="byd-input-user">
-                                            <div class="p-floating-container">
 
-                                                <input id="user-id" name="Uname" type="text" placeholder="نام کاربری" />
-                                                <label>نام کاربری</label>
+                                    </div>
+                                </div>
 
-                                            </div>
+                                <div class="byd-password  byd-style-flex">
+
+                                    <div class="byd-password-icon  byd-style-flex">
+                                        <i class="icon-user"></i>
+                                    </div>
+                                    <div class="byd-input-pass">
+                                        <div class="p-floating-container">
+
+                                            <input id="pass-id" name="Password" type="password"  placeholder="رمزعبور" />
+                                            <label> رمزعبور</label>
 
                                         </div>
                                     </div>
-
-                                    <div class="byd-password">
-
-                                        <div class="byd-password-icon">
-                                            <i class="icon-keyboard"></i>
-                                        </div>
-                                        <div class="byd-input-pass">
-                                            <div class="p-floating-container">
-
-                                                <input id="pass-id" name="Password" type="password"  placeholder="رمزعبور" />
-                                                <label> رمزعبور</label>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="byd-form-down">
-                                   <p class="byd-fotget-pass">رمز عبورتان را فراموش کرده اید؟</p> 
+                                </div>
+                                <div class="byd-form-down">
+                                    <p class="byd-fotget-pass">رمز عبورتان را فراموش کرده‌اید؟</p>
 
                                     <input type="submit" name="log" id="log"  value="ورود" onclick="functionValid()" >
                                     <input type="submit" name="log" id="submit" value="ثبت نام"> <br>
 
                                 </div>
 
-                                </form>
-                            </div>
+                            </form>
                         </div>
-                        <div class="  col-lg-7  Advertise">
+                    </div>
+                    <div class="  col-lg-7  Advertise">
 
-
-                        </div>
 
                     </div>
 
                 </div>
 
             </div>
+
         </div>
     </div>
-
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    
-    <script src="js/jquery.mim.js"></script>
-   
-
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+</div>
 
 
-   
-   
-    
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/swiper.min.js"></script>
+
+
+
+<script src="dashboard/js/jquery.min.js"></script>
+<script src="dashboard/js/validate.min.js"></script>
+<script src="dashboard/js//additional methods.min.js"></script>
+<script src="dashboard/js/bootstrap.min.js"></script>
+<script src="dashboard/js/popper.min.js"></script>
+<script src="dashboard/js/login.js"></script>
+
 
 
 </body>
